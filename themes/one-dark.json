@@ -1,0 +1,86 @@
+{
+  "$schema": "https://pi.dev/schemas/theme.schema.json",
+  "name": "one-dark",
+  "vars": {
+    "bg": "#282C34",
+    "bgDark": "#21252B",
+    "bgRaised": "#353B45",
+    "selection": "#3E4451",
+    "fg": "#ABB2BF",
+    "comment": "#5C6370",
+    "gray": "#7F848E",
+    "red": "#E06C75",
+    "green": "#98C379",
+    "yellow": "#E5C07B",
+    "orange": "#D19A66",
+    "blue": "#61AFEF",
+    "purple": "#C678DD",
+    "cyan": "#56B6C2",
+    "errorBg": "#3B2E32"
+  },
+  "colors": {
+    "accent": "blue",
+    "border": "comment",
+    "borderAccent": "blue",
+    "borderMuted": "selection",
+    "success": "green",
+    "error": "red",
+    "warning": "yellow",
+    "muted": "gray",
+    "dim": "comment",
+    "text": "fg",
+    "thinkingText": "comment",
+
+    "selectedBg": "selection",
+    "userMessageBg": "bgRaised",
+    "userMessageText": "fg",
+    "customMessageBg": "bgDark",
+    "customMessageText": "fg",
+    "customMessageLabel": "purple",
+
+    "toolPendingBg": "bgRaised",
+    "toolSuccessBg": "bgRaised",
+    "toolErrorBg": "errorBg",
+    "toolTitle": "fg",
+    "toolOutput": "comment",
+
+    "mdHeading": "blue",
+    "mdLink": "cyan",
+    "mdLinkUrl": "comment",
+    "mdCode": "cyan",
+    "mdCodeBlock": "green",
+    "mdCodeBlockBorder": "selection",
+    "mdQuote": "gray",
+    "mdQuoteBorder": "selection",
+    "mdHr": "comment",
+    "mdListBullet": "blue",
+
+    "toolDiffAdded": "green",
+    "toolDiffRemoved": "red",
+    "toolDiffContext": "comment",
+
+    "syntaxComment": "#5C6370",
+    "syntaxKeyword": "#C678DD",
+    "syntaxFunction": "#61AFEF",
+    "syntaxVariable": "#E06C75",
+    "syntaxString": "#98C379",
+    "syntaxNumber": "#D19A66",
+    "syntaxType": "#E5C07B",
+    "syntaxOperator": "#56B6C2",
+    "syntaxPunctuation": "#ABB2BF",
+
+    "thinkingOff": "selection",
+    "thinkingMinimal": "comment",
+    "thinkingLow": "cyan",
+    "thinkingMedium": "blue",
+    "thinkingHigh": "purple",
+    "thinkingXhigh": "red",
+
+    "bashMode": "green"
+  },
+  "export": {
+    "pageBg": "#21252B",
+    "cardBg": "#282C34",
+    "infoBg": "#353B45"
+  }
+}

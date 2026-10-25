@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!-- ==========================================================================
+  repo-wiki page template.
+  Copy this file to repo-wiki/<slug>.html and replace every {{PLACEHOLDER}}.
+  Structure, ids, and asset paths must stay exactly as-is — wiki.js targets
+  them. Author content only inside <article class="wiki-article"> and the
+  related-pages list.
+  Placeholders:
+    {{PROJECT}}      project name, e.g. "acme-api"
+    {{PAGE_TITLE}}   page title, e.g. "Architecture"
+    {{SECTION}}      nav section this page belongs to, e.g. "Overview"
+    {{LEDE}}         1–2 sentence summary of the page (plain text, also used
+                     in the meta description)
+    {{BYLINE}}       deep-dive pages: <p class="byline"><span class="byline-label">Active
+                     contributors</span> alice, bob</p> — empty string on every
+                     other page (solo repos, Start here, Reviewer's desk)
+    {{TLDR}}         the one paragraph a reader must not miss
+    {{CONTENT}}      the page body: h2/h3 sections, tables, code, diagrams,
+                     callouts, source chips (see references/html-authoring.md)
+    {{RELATED}}      0–4 <li><a href="./other-page.html">Other page</a></li>
+========================================================================== -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{LEDE}}">
+  <meta name="generator" content="repo-wiki">
+  <title>{{PAGE_TITLE}} · {{PROJECT}} · repo wiki</title>
+  <link rel="stylesheet" href="./assets/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M3 17a9 9 0 0 1 18 0' fill='none' stroke='%232f9e8a' stroke-width='2.6' stroke-linecap='round'/%3E%3Ccircle cx='12' cy='17' r='1.6' fill='%237a5bbf'/%3E%3C/svg%3E">
+  <script>
+    /* set theme before first paint to avoid a flash — the choice is global:
+       ?theme= (fallback path when localStorage is unavailable) wins, then the
+       stored choice, then the OS preference. Keep in sync with assets/wiki.js. */
+    (function () {
+      var m = /[?&]theme=(light|dark)(?:&|$)/.exec(location.search);
+      var t = m && m[1];
+      if (!t) { try { t = localStorage.getItem("repo-wiki-theme"); } catch (e) { /* blocked */ } }
+      if (t !== "light" && t !== "dark") {
+        t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="topbar">
+    <button id="menu-btn" class="btn-ghost" aria-label="Toggle navigation">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <a class="brand" href="./index.html">
+      <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true">
+        <defs>
+          <linearGradient id="repo-wiki-g" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#0d8a72"/><stop offset=".55" stop-color="#2f6fa8"/><stop offset="1" stop-color="#7a5bbf"/>
+          </linearGradient>
+        </defs>
+        <path d="M3 17a9 9 0 0 1 18 0" fill="none" stroke="url(#repo-wiki-g)" stroke-width="2.4" stroke-linecap="round"/>
+        <path d="M7.5 17a4.5 4.5 0 0 1 9 0" fill="none" stroke="url(#repo-wiki-g)" stroke-width="2.4" stroke-linecap="round" opacity=".5"/>
+        <circle cx="12" cy="17" r="1.4" fill="url(#repo-wiki-g)"/>
+      </svg>
+      <span class="brand-project">{{PROJECT}}</span>
+      <span class="brand-wiki">repo wiki</span>
+    </a>
+    <nav id="crumbs" class="crumbs" aria-label="Breadcrumb"></nav>
+    <div class="topbar-actions">
+      <button id="search-btn" class="btn-ghost search-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.8-3.8"/></svg>
+        <span>Search</span>
+        <kbd>Ctrl K</kbd>
+      </button>
+      <button id="theme-btn" class="btn-ghost" aria-label="Toggle theme">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor" stroke="none"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="shell">
+    <aside id="sidebar" class="sidebar">
+      <nav id="sidebar-nav" aria-label="Wiki pages"></nav>
+    </aside>
+
+    <main id="content" class="main">
+      <article class="wiki-article">
+        <p class="kicker">{{SECTION}}</p>
+        <h1>{{PAGE_TITLE}}</h1>
+        {{BYLINE}}
+        <p class="page-lede">{{LEDE}}</p>
+
+        <div class="tldr">
+          <div class="tldr-label">If you only read one thing</div>
+          <p>{{TLDR}}</p>
+        </div>
+
+        {{CONTENT}}
+      </article>
+
+      <div class="related">
+        <div class="related-label">Related pages</div>
+        <ul>
+          {{RELATED}}
+        </ul>
+      </div>
+
+      <footer class="page-footer" id="stamp"></footer>
+      <noscript>
+        <p style="font-size:0.8rem;opacity:0.7">Navigation, search, and diagrams need JavaScript;
+        the page content above is fully readable without it.</p>
+      </noscript>
+    </main>
+
+    <aside class="toc" id="toc" aria-label="On this page"></aside>
+  </div>
+
+  <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+
+  <div id="search-overlay" class="search-overlay" role="dialog" aria-modal="true" aria-label="Search this wiki">
+    <div class="search-panel">
+      <div class="search-row">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.8-3.8"/></svg>
+        <input id="search-input" type="text" placeholder="Search pages, sections, keywords…" autocomplete="off" spellcheck="false">
+        <kbd>esc</kbd>
+      </div>
+      <div id="search-results" class="search-results"></div>
+      <div class="search-foot">
+        <span><kbd>↑</kbd><kbd>↓</kbd> navigate</span>
+        <span><kbd>↵</kbd> open</span>
+        <span><kbd>esc</kbd> close</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/nav.js"></script>
+  <script src="./assets/search-index.js"></script>
+  <script src="./assets/wiki.js"></script>
+</body>
+</html>

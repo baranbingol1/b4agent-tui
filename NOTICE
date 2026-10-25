@@ -1,0 +1,83 @@
+b4agent
+Copyright the b4agent authors.
+
+b4agent bundles third-party skills and prompts. Each keeps its license file
+next to it; vendor.json and each skill's UPSTREAM.md record the source,
+pinned commit and local changes. Files adapted from these works were
+modified by the b4agent authors (2026), as noted in their headers.
+
+-------------------------------------------------------------------------------
+OpenAI (Apache License 2.0)
+
+  OpenAI Codex
+  Copyright 2025 OpenAI
+    skills/skill-creator/  (codex-rs/skills/src/assets/samples/skill-creator)
+    agents/reviewer.md, agents/security-reviewer.md  (portions; see
+      ../docs/prompts/SOURCES.md)
+
+  openai/skills (deprecated curated skills, recovered from git history)
+    skills/docx/scripts/render_docx.py and the docx render loop  (doc skill)
+    skills/xlsx/references/formulas-and-formatting.md  (spreadsheet skill)
+    License: skills/docx/LICENSE-APACHE.txt, skills/xlsx/LICENSE-APACHE.txt
+
+-------------------------------------------------------------------------------
+Anthropic (Apache License 2.0)
+
+  anthropics/skills
+  Copyright 2026 Anthropic, PBC.
+    skills/prompt-audit/  (skills/claude-api/shared/prompt-audit.md)
+    skills/skill-creator/references/evals.md  (method after
+      skills/skill-creator; rewritten)
+    License: skills/prompt-audit/LICENSE.txt
+
+  Portions of agents/security-reviewer.md are adapted from
+  anthropics/claude-code-security-review, MIT, Copyright (c) 2025 Anthropic
+  (see ../docs/prompts/SOURCES.md).
+
+-------------------------------------------------------------------------------
+Nous Research (MIT)
+
+  Hermes Agent, Copyright (c) 2026 Nous Research
+    skills/docx/, skills/xlsx/, skills/pdf/, skills/pptx/
+      (skills/productivity/{docx,xlsx,pdf,powerpoint})
+    License: the LICENSE file in each of those folders
+
+-------------------------------------------------------------------------------
+OpenClaw (MIT)
+
+  OpenClaw, Copyright (c) 2026 OpenClaw Foundation
+    skills/test-audit/  (.agents/skills/test-audit, by Peter Steinberger and
+      contributors, and docs/help/testing/writing-tests.md)
+    License: skills/test-audit/LICENSE
+
+-------------------------------------------------------------------------------
+Archify (MIT)
+
+  Copyright (c) 2026 tt-a1i (Archify)
+  Copyright (c) 2025 Cocoon AI (architecture-diagram-generator, on which
+  Archify is based)
+    skills/archify/
+    License: skills/archify/LICENSE
+    Brand marks (Simple Icons and per-mark licenses), the JetBrains Mono
+    font (OFL-1.1) and a Pele subset (MIT, Copyright (c) 2026 kepano;
+    skills/archify/explainer/vendor/pele/LICENSE):
+      skills/archify/THIRD_PARTY_NOTICES.md
+
+-------------------------------------------------------------------------------
+Others
+
+  repo-wiki, Copyright (c) 2026 Baran Bingöl, MIT: skills/repo-wiki/
+  explain-diff, by Geoffrey Litt (gist, no license declared; vendored with
+    attribution at the user's direction): skills/explain-diff/
+
+Optional tools the skills may install, only when needed and never bundled:
+markitdown (Microsoft, MIT); pymupdf (AGPL-3.0) and marker-pdf (GPL-3.0),
+opt-in with the user's consent.
+
+-------------------------------------------------------------------------------
+pstack (MIT)
+
+  backnotprop/pstack (mirror of cursor/plugins pstack), Copyright (c) 2026 Lauren Tan
+    skills/create-verification-skill/, skills/maintain-verification-skill/
+    License: the LICENSE file in each of those folders
+

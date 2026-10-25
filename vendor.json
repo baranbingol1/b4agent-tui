@@ -1,0 +1,151 @@
+{
+  "$comment": "Vendored skills and prompts (plan section 21). One entry per upstream source; `dest` is the local copy. `scripts/vendor-diff.mjs <name>` shows what changed upstream since `commit`. Update `commit` and `localChanges` when you pull changes in. Each skill's UPSTREAM.md says the same in prose.",
+  "entries": [
+    {
+      "name": "explain-diff",
+      "repo": "https://gist.github.com/geoffreylitt/a29df1b5f9865506e8952488eac3d524",
+      "path": "explain-diff-html.md",
+      "commit": "126e7fe9eecaafadfe1ac8bb183d135812b608f2",
+      "license": "none declared; vendored with attribution at the user's direction",
+      "dest": "skills/explain-diff",
+      "localChanges": "Renamed explain-diff-html to explain-diff, broader description, output in /tmp by default, tells the user the path. The Notion variant isn't vendored."
+    },
+    {
+      "name": "skill-creator",
+      "repo": "https://github.com/openai/codex",
+      "path": "codex-rs/skills/src/assets/samples/skill-creator",
+      "commit": "c419fd01a70dd1d05356da443ac44328bda2e6f4",
+      "license": "Apache-2.0",
+      "dest": "skills/skill-creator",
+      "localChanges": "b4agent/Pi skill locations and frontmatter rules; openai.yaml, its generator, reference and icons dropped (disable-model-invocation instead); forward-testing via the agent tool; init_skill.py writes no openai.yaml; quick_validate.py accepts Pi's keys and checks name == folder."
+    },
+    {
+      "name": "skill-creator-evals",
+      "repo": "https://github.com/anthropics/skills",
+      "path": "skills/skill-creator/SKILL.md",
+      "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+      "license": "Apache-2.0",
+      "dest": "skills/skill-creator/references/evals.md",
+      "localChanges": "Method only, rewritten: with-skill vs baseline runs through b4agent subagents, trigger eval through b4agent -p --mode json --skill, train/test description tuning. No scripts, viewer or grader prompts."
+    },
+    {
+      "name": "prompt-audit",
+      "repo": "https://github.com/anthropics/skills",
+      "path": "skills/claude-api/shared/prompt-audit.md",
+      "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+      "license": "Apache-2.0",
+      "dest": "skills/prompt-audit",
+      "localChanges": "Own skill; provider-neutral (model-specific claims deferred to the provider's docs); inventory adds AGENTS.override.md, .pi/ (SYSTEM.md, APPEND_SYSTEM.md, skills, prompts, agents), .agents/skills, b4agent's roster and b4agent.json; keep-list item for license comments."
+    },
+    {
+      "name": "test-audit",
+      "repo": "https://github.com/openclaw/openclaw",
+      "path": ".agents/skills/test-audit",
+      "commit": "ecc3a77078f8a7aaa8c6627ce255caf59cf96ee7",
+      "license": "MIT",
+      "dest": "skills/test-audit",
+      "localChanges": "Expanded wording; links fixed; OpenClaw proof policy, CI scripts and deadcode gates replaced by generic steps; campaign lanes and reviews run as b4agent subagents."
+    },
+    {
+      "name": "test-audit-writing-tests",
+      "repo": "https://github.com/openclaw/openclaw",
+      "path": "docs/help/testing/writing-tests.md",
+      "commit": "ecc3a77078f8a7aaa8c6627ce255caf59cf96ee7",
+      "license": "MIT",
+      "dest": "skills/test-audit/references/writing-tests.md",
+      "localChanges": "General sections kept; OpenClaw planner budgets, CI lanes, fixture recipes and paths dropped."
+    },
+    {
+      "name": "repo-wiki",
+      "repo": "https://github.com/baranbingol1/repo-wiki",
+      "path": "repo-wiki",
+      "commit": "885f76e3c1f3e171d222d7fe9a10b76bd9173470",
+      "license": "MIT",
+      "dest": "skills/repo-wiki",
+      "localChanges": "None (LICENSE copied from the repository root)."
+    },
+    {
+      "name": "archify",
+      "repo": "https://github.com/tt-a1i/archify",
+      "path": "archify",
+      "commit": "25cf37080fc8b1dbe758a4efc3935b55f3327083",
+      "license": "MIT",
+      "dest": "skills/archify",
+      "localChanges": "v3.2 (git archive of archify/). Removed the 'Update awareness' section of SKILL.md and its two cross-references; bin/delivery-update.mjs always reports the update check as disabled, so finalize/deliver never fetch the remote manifest. check-update.mjs, delivery-update-child.mjs and references/update-awareness.md still shipped, unreached."
+    },
+    {
+      "name": "docx",
+      "repo": "https://github.com/NousResearch/hermes-agent",
+      "path": "skills/productivity/docx",
+      "commit": "6932521f258cca074ed206254b329d5b3b982eac",
+      "license": "MIT",
+      "dest": "skills/docx",
+      "localChanges": "Pi frontmatter, tool names, check_deps.py prerequisites, render loop section, comment author default b4agent."
+    },
+    {
+      "name": "docx-render",
+      "repo": "https://github.com/openai/skills",
+      "path": "skills/.curated/doc",
+      "commit": "45d05d75363abf13f99d09e899d61e07b8010685",
+      "license": "Apache-2.0",
+      "dest": "skills/docx/scripts/render_docx.py",
+      "localChanges": "render_docx.py: lazy pdf2image import, license header. SKILL.md render guidance condensed into docx's 'Rendering pages for review'. Upstream deleted the skill in 228962a, so this source won't change.",
+      "upstreamRemoved": "228962adea8205e27e5381ff07929623be83ccb2"
+    },
+    {
+      "name": "xlsx",
+      "repo": "https://github.com/NousResearch/hermes-agent",
+      "path": "skills/productivity/xlsx",
+      "commit": "6932521f258cca074ed206254b329d5b3b982eac",
+      "license": "MIT",
+      "dest": "skills/xlsx",
+      "localChanges": "Pi frontmatter, tool names, check_deps.py prerequisites; formula-error scan in xlsx_recalc.py (#REF!/#NAME?/..., --strict) with two tests."
+    },
+    {
+      "name": "xlsx-rules",
+      "repo": "https://github.com/openai/skills",
+      "path": "skills/.curated/spreadsheet/SKILL.md",
+      "commit": "e6afb0d74cc75d220df2faf3dd6c635c2dc6a108",
+      "license": "Apache-2.0",
+      "dest": "skills/xlsx/references/formulas-and-formatting.md",
+      "localChanges": "Formula, citation, formatting, color and finance sections kept; tooling, dependency and output-folder sections dropped; error rule tied to xlsx_recalc.py. Upstream deleted the skill in fdf90d6, so this source won't change.",
+      "upstreamRemoved": "fdf90d652aea00d3fa57803a348744b1d7670fcb"
+    },
+    {
+      "name": "pdf",
+      "repo": "https://github.com/NousResearch/hermes-agent",
+      "path": "skills/productivity/pdf",
+      "commit": "6932521f258cca074ed206254b329d5b3b982eac",
+      "license": "MIT",
+      "dest": "skills/pdf",
+      "localChanges": "Pi frontmatter, tool names, check_deps.py prerequisites; nano-pdf reference dropped; OCR reference rewritten as opt-in (pymupdf AGPL, marker GPL, user consent)."
+    },
+    {
+      "name": "pptx",
+      "repo": "https://github.com/NousResearch/hermes-agent",
+      "path": "skills/productivity/powerpoint",
+      "commit": "6932521f258cca074ed206254b329d5b3b982eac",
+      "license": "MIT",
+      "dest": "skills/pptx",
+      "localChanges": "Renamed powerpoint -> pptx; Pi frontmatter, tool names, check_deps.py prerequisites; pointer to OpenAI's slides skill."
+    },
+    {
+      "name": "create-verification-skill",
+      "repo": "https://github.com/backnotprop/pstack",
+      "path": "skills/create-verification-skill",
+      "commit": "18b6c36e6e201b110acc62472de987416ac4e23b",
+      "license": "MIT",
+      "dest": "skills/create-verification-skill",
+      "localChanges": "Pi /skill: commands; b4agent project skill folder (.pi/skills/)."
+    },
+    {
+      "name": "maintain-verification-skill",
+      "repo": "https://github.com/backnotprop/pstack",
+      "path": "skills/maintain-verification-skill",
+      "commit": "18b6c36e6e201b110acc62472de987416ac4e23b",
+      "license": "MIT",
+      "dest": "skills/maintain-verification-skill",
+      "localChanges": "Pi /skill: commands; source wave via the search helper; local commit when the repo has no PRs, never pushed unasked."
+    }
+  ]
+}

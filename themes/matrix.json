@@ -1,0 +1,86 @@
+{
+  "$schema": "https://pi.dev/schemas/theme.schema.json",
+  "name": "matrix",
+  "vars": {
+    "black": "#000000",
+    "deepGreen": "#001400",
+    "panelGreen": "#001F00",
+    "selectGreen": "#003B00",
+    "darkGreen": "#007722",
+    "midGreen": "#008F11",
+    "codeGreen": "#00CC33",
+    "phosphor": "#00FF41",
+    "paleGreen": "#66FF99",
+    "mintGreen": "#33FF77",
+    "limeGreen": "#99FF33",
+    "cyanGreen": "#00FFCC",
+    "alertLime": "#D0FF00",
+    "pillRed": "#FF3333",
+    "errorBg": "#200000"
+  },
+  "colors": {
+    "accent": "phosphor",
+    "border": "midGreen",
+    "borderAccent": "phosphor",
+    "borderMuted": "selectGreen",
+    "success": "phosphor",
+    "error": "pillRed",
+    "warning": "alertLime",
+    "muted": "codeGreen",
+    "dim": "darkGreen",
+    "text": "phosphor",
+    "thinkingText": "codeGreen",
+
+    "selectedBg": "selectGreen",
+    "userMessageBg": "panelGreen",
+    "userMessageText": "phosphor",
+    "customMessageBg": "deepGreen",
+    "customMessageText": "phosphor",
+    "customMessageLabel": "paleGreen",
+
+    "toolPendingBg": "panelGreen",
+    "toolSuccessBg": "panelGreen",
+    "toolErrorBg": "errorBg",
+    "toolTitle": "phosphor",
+    "toolOutput": "codeGreen",
+
+    "mdHeading": "phosphor",
+    "mdLink": "cyanGreen",
+    "mdLinkUrl": "darkGreen",
+    "mdCode": "paleGreen",
+    "mdCodeBlock": "mintGreen",
+    "mdCodeBlockBorder": "midGreen",
+    "mdQuote": "codeGreen",
+    "mdQuoteBorder": "midGreen",
+    "mdHr": "darkGreen",
+    "mdListBullet": "phosphor",
+
+    "toolDiffAdded": "phosphor",
+    "toolDiffRemoved": "pillRed",
+    "toolDiffContext": "codeGreen",
+
+    "syntaxComment": "#007722",
+    "syntaxKeyword": "#00FF41",
+    "syntaxFunction": "#66FF99",
+    "syntaxVariable": "#00DD66",
+    "syntaxString": "#33FF99",
+    "syntaxNumber": "#99FF33",
+    "syntaxType": "#00FFCC",
+    "syntaxOperator": "#00CC33",
+    "syntaxPunctuation": "#00A832",
+
+    "thinkingOff": "selectGreen",
+    "thinkingMinimal": "darkGreen",
+    "thinkingLow": "midGreen",
+    "thinkingMedium": "codeGreen",
+    "thinkingHigh": "phosphor",
+    "thinkingXhigh": "paleGreen",
+
+    "bashMode": "phosphor"
+  },
+  "export": {
+    "pageBg": "#000000",
+    "cardBg": "#001400",
+    "infoBg": "#001F00"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "$schema": "https://pi.dev/schemas/theme.schema.json",
+  "name": "rose-pine",
+  "vars": {
+    "base": "#191724",
+    "surface": "#1F1D2E",
+    "overlay": "#26233A",
+    "mutedIris": "#6E6A86",
+    "subtle": "#908CAA",
+    "text": "#E0DEF4",
+    "love": "#EB6F92",
+    "gold": "#F6C177",
+    "rose": "#EBBCBA",
+    "pine": "#31748F",
+    "foam": "#9CCFD8",
+    "iris": "#C4A7E7",
+    "highlightMed": "#403D52",
+    "highlightHigh": "#524F67",
+    "errorBg": "#322231"
+  },
+  "colors": {
+    "accent": "rose",
+    "border": "highlightHigh",
+    "borderAccent": "rose",
+    "borderMuted": "overlay",
+    "success": "foam",
+    "error": "love",
+    "warning": "gold",
+    "muted": "subtle",
+    "dim": "mutedIris",
+    "text": "text",
+    "thinkingText": "subtle",
+
+    "selectedBg": "highlightMed",
+    "userMessageBg": "overlay",
+    "userMessageText": "text",
+    "customMessageBg": "surface",
+    "customMessageText": "text",
+    "customMessageLabel": "iris",
+
+    "toolPendingBg": "overlay",
+    "toolSuccessBg": "overlay",
+    "toolErrorBg": "errorBg",
+    "toolTitle": "text",
+    "toolOutput": "subtle",
+
+    "mdHeading": "iris",
+    "mdLink": "foam",
+    "mdLinkUrl": "mutedIris",
+    "mdCode": "gold",
+    "mdCodeBlock": "foam",
+    "mdCodeBlockBorder": "highlightHigh",
+    "mdQuote": "subtle",
+    "mdQuoteBorder": "highlightHigh",
+    "mdHr": "mutedIris",
+    "mdListBullet": "rose",
+
+    "toolDiffAdded": "foam",
+    "toolDiffRemoved": "love",
+    "toolDiffContext": "subtle",
+
+    "syntaxComment": "#6E6A86",
+    "syntaxKeyword": "#31748F",
+    "syntaxFunction": "#EBBCBA",
+    "syntaxVariable": "#E0DEF4",
+    "syntaxString": "#F6C177",
+    "syntaxNumber": "#C4A7E7",
+    "syntaxType": "#9CCFD8",
+    "syntaxOperator": "#908CAA",
+    "syntaxPunctuation": "#908CAA",
+
+    "thinkingOff": "highlightHigh",
+    "thinkingMinimal": "mutedIris",
+    "thinkingLow": "foam",
+    "thinkingMedium": "iris",
+    "thinkingHigh": "rose",
+    "thinkingXhigh": "love",
+
+    "bashMode": "foam"
+  },
+  "export": {
+    "pageBg": "#1F1D2E",
+    "cardBg": "#191724",
+    "infoBg": "#26233A"
+  }
+}

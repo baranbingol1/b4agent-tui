@@ -1,0 +1,85 @@
+{
+  "$schema": "https://pi.dev/schemas/theme.schema.json",
+  "name": "monokai",
+  "vars": {
+    "bg": "#272822",
+    "bgDark": "#1E1F1C",
+    "bgRaised": "#3E3D32",
+    "currentLine": "#49483E",
+    "fg": "#F8F8F2",
+    "comment": "#75715E",
+    "dimGray": "#5C5B4E",
+    "pink": "#F92672",
+    "orange": "#FD971F",
+    "yellow": "#E6DB74",
+    "green": "#A6E22E",
+    "cyan": "#66D9EF",
+    "purple": "#AE81FF",
+    "errorBg": "#3B2A2E"
+  },
+  "colors": {
+    "accent": "green",
+    "border": "comment",
+    "borderAccent": "green",
+    "borderMuted": "currentLine",
+    "success": "green",
+    "error": "pink",
+    "warning": "orange",
+    "muted": "comment",
+    "dim": "dimGray",
+    "text": "fg",
+    "thinkingText": "comment",
+
+    "selectedBg": "currentLine",
+    "userMessageBg": "bgRaised",
+    "userMessageText": "fg",
+    "customMessageBg": "bgDark",
+    "customMessageText": "fg",
+    "customMessageLabel": "pink",
+
+    "toolPendingBg": "bgRaised",
+    "toolSuccessBg": "bgRaised",
+    "toolErrorBg": "errorBg",
+    "toolTitle": "fg",
+    "toolOutput": "comment",
+
+    "mdHeading": "green",
+    "mdLink": "cyan",
+    "mdLinkUrl": "comment",
+    "mdCode": "cyan",
+    "mdCodeBlock": "green",
+    "mdCodeBlockBorder": "comment",
+    "mdQuote": "comment",
+    "mdQuoteBorder": "comment",
+    "mdHr": "comment",
+    "mdListBullet": "green",
+
+    "toolDiffAdded": "green",
+    "toolDiffRemoved": "pink",
+    "toolDiffContext": "comment",
+
+    "syntaxComment": "#75715E",
+    "syntaxKeyword": "#F92672",
+    "syntaxFunction": "#A6E22E",
+    "syntaxVariable": "#F8F8F2",
+    "syntaxString": "#E6DB74",
+    "syntaxNumber": "#AE81FF",
+    "syntaxType": "#66D9EF",
+    "syntaxOperator": "#F92672",
+    "syntaxPunctuation": "#F8F8F2",
+
+    "thinkingOff": "currentLine",
+    "thinkingMinimal": "comment",
+    "thinkingLow": "cyan",
+    "thinkingMedium": "green",
+    "thinkingHigh": "purple",
+    "thinkingXhigh": "pink",
+
+    "bashMode": "green"
+  },
+  "export": {
+    "pageBg": "#1E1F1C",
+    "cardBg": "#272822",
+    "infoBg": "#3E3D32"
+  }
+}

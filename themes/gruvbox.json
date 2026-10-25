@@ -1,0 +1,87 @@
+{
+  "$schema": "https://pi.dev/schemas/theme.schema.json",
+  "name": "gruvbox",
+  "vars": {
+    "bg": "#282828",
+    "bgDark": "#1D2021",
+    "bg1": "#3C3836",
+    "bg2": "#504945",
+    "bg3": "#665C54",
+    "fg": "#EBDBB2",
+    "gray": "#928374",
+    "grayLight": "#A89984",
+    "red": "#FB4934",
+    "green": "#B8BB26",
+    "yellow": "#FABD2F",
+    "orange": "#FE8019",
+    "blue": "#83A598",
+    "aqua": "#8EC07C",
+    "purple": "#D3869B",
+    "errorBg": "#3C2A28"
+  },
+  "colors": {
+    "accent": "aqua",
+    "border": "bg3",
+    "borderAccent": "aqua",
+    "borderMuted": "bg2",
+    "success": "green",
+    "error": "red",
+    "warning": "orange",
+    "muted": "grayLight",
+    "dim": "gray",
+    "text": "fg",
+    "thinkingText": "grayLight",
+
+    "selectedBg": "bg2",
+    "userMessageBg": "bg1",
+    "userMessageText": "fg",
+    "customMessageBg": "bgDark",
+    "customMessageText": "fg",
+    "customMessageLabel": "purple",
+
+    "toolPendingBg": "bg1",
+    "toolSuccessBg": "bg1",
+    "toolErrorBg": "errorBg",
+    "toolTitle": "fg",
+    "toolOutput": "grayLight",
+
+    "mdHeading": "green",
+    "mdLink": "blue",
+    "mdLinkUrl": "gray",
+    "mdCode": "aqua",
+    "mdCodeBlock": "green",
+    "mdCodeBlockBorder": "bg3",
+    "mdQuote": "grayLight",
+    "mdQuoteBorder": "bg3",
+    "mdHr": "gray",
+    "mdListBullet": "yellow",
+
+    "toolDiffAdded": "green",
+    "toolDiffRemoved": "red",
+    "toolDiffContext": "grayLight",
+
+    "syntaxComment": "#928374",
+    "syntaxKeyword": "#FB4934",
+    "syntaxFunction": "#B8BB26",
+    "syntaxVariable": "#83A598",
+    "syntaxString": "#FABD2F",
+    "syntaxNumber": "#D3869B",
+    "syntaxType": "#8EC07C",
+    "syntaxOperator": "#FE8019",
+    "syntaxPunctuation": "#EBDBB2",
+
+    "thinkingOff": "bg3",
+    "thinkingMinimal": "gray",
+    "thinkingLow": "blue",
+    "thinkingMedium": "aqua",
+    "thinkingHigh": "purple",
+    "thinkingXhigh": "red",
+
+    "bashMode": "green"
+  },
+  "export": {
+    "pageBg": "#1D2021",
+    "cardBg": "#282828",
+    "infoBg": "#3C3836"
+  }
+}

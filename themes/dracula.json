@@ -1,0 +1,86 @@
+{
+  "$schema": "https://pi.dev/schemas/theme.schema.json",
+  "name": "dracula",
+  "vars": {
+    "bg": "#282A36",
+    "bgDark": "#21222C",
+    "bgRaised": "#343746",
+    "currentLine": "#44475A",
+    "fg": "#F8F8F2",
+    "comment": "#6272A4",
+    "dimGray": "#565B74",
+    "cyan": "#8BE9FD",
+    "green": "#50FA7B",
+    "orange": "#FFB86C",
+    "pink": "#FF79C6",
+    "purple": "#BD93F9",
+    "red": "#FF5555",
+    "yellow": "#F1FA8C",
+    "errorBg": "#422F3A"
+  },
+  "colors": {
+    "accent": "purple",
+    "border": "comment",
+    "borderAccent": "purple",
+    "borderMuted": "currentLine",
+    "success": "green",
+    "error": "red",
+    "warning": "yellow",
+    "muted": "comment",
+    "dim": "dimGray",
+    "text": "fg",
+    "thinkingText": "comment",
+
+    "selectedBg": "currentLine",
+    "userMessageBg": "bgRaised",
+    "userMessageText": "fg",
+    "customMessageBg": "bgDark",
+    "customMessageText": "fg",
+    "customMessageLabel": "pink",
+
+    "toolPendingBg": "bgRaised",
+    "toolSuccessBg": "bgRaised",
+    "toolErrorBg": "errorBg",
+    "toolTitle": "fg",
+    "toolOutput": "comment",
+
+    "mdHeading": "purple",
+    "mdLink": "cyan",
+    "mdLinkUrl": "comment",
+    "mdCode": "cyan",
+    "mdCodeBlock": "green",
+    "mdCodeBlockBorder": "comment",
+    "mdQuote": "comment",
+    "mdQuoteBorder": "comment",
+    "mdHr": "comment",
+    "mdListBullet": "purple",
+
+    "toolDiffAdded": "green",
+    "toolDiffRemoved": "red",
+    "toolDiffContext": "comment",
+
+    "syntaxComment": "#6272A4",
+    "syntaxKeyword": "#FF79C6",
+    "syntaxFunction": "#50FA7B",
+    "syntaxVariable": "#F8F8F2",
+    "syntaxString": "#F1FA8C",
+    "syntaxNumber": "#BD93F9",
+    "syntaxType": "#8BE9FD",
+    "syntaxOperator": "#FF79C6",
+    "syntaxPunctuation": "#F8F8F2",
+
+    "thinkingOff": "currentLine",
+    "thinkingMinimal": "comment",
+    "thinkingLow": "cyan",
+    "thinkingMedium": "purple",
+    "thinkingHigh": "pink",
+    "thinkingXhigh": "red",
+
+    "bashMode": "green"
+  },
+  "export": {
+    "pageBg": "#21222C",
+    "cardBg": "#282A36",
+    "infoBg": "#343746"
+  }
+}
